@@ -178,7 +178,8 @@ class Settings(CiBuildSettingsManager, UpdateSettingsManager, SetupSettingsManag
         return rs
 
     def GetName(self):
-        return "Edk2"
+        # MU_CHANGE
+        return "Basecore"
 
     def GetDependencies(self):
         return [
