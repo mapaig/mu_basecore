@@ -49,7 +49,10 @@ Bug Fixes-dev
 2108_CIBuild Changes
 --------------------
 
-- Incomplete
+- MdeModulePkg/Universal/Variable/RuntimeDxe/PropertyBasedVarLockLib.inf is gone
+    - This was not kept in the EDK2 integration. It is not required (and not supported).
+- SecurityPkg/RandomNumberGenerator/RngDxeLib/RngDxeLib.inf is dropped in favor of EDK2 version.
+    - Please use MdePkg/Library/DxeRngLib/DxeRngLib.inf.
 
 2108_Rebase Changes
 -------------------
