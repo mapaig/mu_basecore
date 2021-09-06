@@ -20,7 +20,15 @@
   PLATFORM_VERSION               = 1.0
   DSC_SPECIFICATION              = 0x00010011
   OUTPUT_DIRECTORY               = Build/StandaloneMm
-  SUPPORTED_ARCHITECTURES        = AARCH64|X64|ARM
+  # MU_CHANGE [BEGIN]
+  # ARM was recently enabled in EDK2.
+  # For now, building ARM causes:
+  # cspell:disable-next-line
+  # BaseTools/Bin/gcc_arm_linux_extdep/bin/../lib/gcc/arm-linux-gnueabihf/7.4.1/../../../../arm-linux-gnueabihf/bin/ld: read-only segment has dynamic relocations.
+  # Need to investigate further.
+  #SUPPORTED_ARCHITECTURES        = AARCH64|X64|ARM
+  SUPPORTED_ARCHITECTURES        = AARCH64|X64
+  # MU_CHANGE [END]
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
 
