@@ -8,6 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include <Uefi.h>
+#include <Library/DebugLib.h>
 
 /**
   Bitwise sets the memory attributes on a range of memory based on an attributes mask.
@@ -29,6 +30,8 @@ MmuSetAttributes (
   IN  UINT64                    Attributes
   )
 {
+  DEBUG ((DEBUG_ERROR, "%a() NULL implementation used!\n", __FUNCTION__));
+  ASSERT (FALSE);
   return EFI_UNSUPPORTED;
 }
 
@@ -53,6 +56,8 @@ MmuClearAttributes (
   IN  UINT64                    Attributes
   )
 {
+  DEBUG ((DEBUG_ERROR, "%a() NULL implementation used!\n", __FUNCTION__));
+  ASSERT (FALSE);
   return EFI_UNSUPPORTED;
 }
 
@@ -75,5 +80,7 @@ MmuGetAttributes (
   OUT UINT64                    *Attributes
   )
 {
+  DEBUG ((DEBUG_ERROR, "%a() NULL implementation used!\n", __FUNCTION__));
+  ASSERT (FALSE);
   return EFI_UNSUPPORTED;
 }

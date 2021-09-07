@@ -21,5 +21,9 @@
   BaseMmuLibNull.c
 
 
+[LibraryClass]
+  DebugLib
+
+
 [Packages]
   MdePkg/MdePkg.dec
