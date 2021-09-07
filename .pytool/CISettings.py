@@ -50,12 +50,10 @@ class Settings(CiBuildSettingsManager, UpdateSettingsManager, SetupSettingsManag
         These should be edk2 workspace relative paths '''
 
         return ("BaseTools", # MU_CHANGE
-                "CryptoPkg",
                 "MdePkg",
                 "MdeModulePkg",
                 "NetworkPkg",
                 "PcAtChipsetPkg",
-                "ShellPkg",
                 "UefiCpuPkg",
                 "ShellPkg",
                 "StandaloneMmPkg",
