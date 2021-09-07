@@ -21,7 +21,7 @@
   BaseMmuLibNull.c
 
 
-[LibraryClass]
+[LibraryClasses]
   DebugLib
 
 
