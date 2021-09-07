@@ -179,7 +179,6 @@
   MdePkg/Library/BaseBinSecurityLibRng/BaseBinSecurityLibRng.inf
 !endif
   ##MSCHANGE End
-  MdePkg/Library/BaseRngLib/BaseRngLib.inf
   MdePkg/Library/SmmPciExpressLib/SmmPciExpressLib.inf
   MdePkg/Library/SmiHandlerProfileLibNull/SmiHandlerProfileLibNull.inf
   MdePkg/Library/MmServicesTableLib/MmServicesTableLib.inf
